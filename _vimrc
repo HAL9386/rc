@@ -1,0 +1,56 @@
+let mapleader="\<Space>"
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>x :x<CR>
+
+vnoremap <Leader><Leader>y "+y
+nnoremap <Leader><Leader>y "+y
+
+nnoremap <Leader><Leader>p "+p
+nnoremap <Leader><Leader>P "+P
+vnoremap <Leader><Leader>p "+p
+vnoremap <Leader><Leader>P "+P
+
+" yank and paste
+nnoremap <Leader>p "0p
+vnoremap <Leader>p "0p
+nnoremap <Leader>P "0P
+vnoremap <Leader>P "0P
+
+
+set encoding=utf-8
+
+syntax enable
+syntax on
+filetype on
+filetype plugin on
+
+set t_Co=256         " 开启256色支持
+set vb t_vb=         " 不要响铃
+
+set guifont=UbuntuMono_Nerd_Font_Mono::h12
+
+set rnu!
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set backspace=indent,eol,start
+set autoindent
+set smartindent
+
+set wrap           " 设置自动换行
+set linebreak      " 整词换行
+set scrolloff=5    " 在光标接近底端或顶端时，自动下滚或上滚
+set autoread       " 当文件在外部被修改，自动更新该文件
+set hidden         " 自动隐藏没有保存的缓冲区，切换buffer时不给出保存当前buffer的提示
+
+" set pair bracket
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+cnoremap ( ()<left>
+cnoremap [ []<left>
+cnoremap { {}<left>
+

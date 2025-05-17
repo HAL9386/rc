@@ -1,0 +1,7 @@
+*
+!.gitignore
+!_vimrc
+!.ideavimrc
+!.config
+!.config/starship.toml
+
