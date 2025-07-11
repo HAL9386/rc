@@ -47,10 +47,12 @@ set autoread       " 当文件在外部被修改，自动更新该文件
 set hidden         " 自动隐藏没有保存的缓冲区，切换buffer时不给出保存当前buffer的提示
 
 " set pair bracket
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-cnoremap ( ()<left>
-cnoremap [ []<left>
-cnoremap { {}<left>
+if !exists('g:pair_bracket')
+  inoremap ( ()<left>
+  inoremap [ []<left>
+  inoremap { {}<left>
+  cnoremap ( ()<left>
+  cnoremap [ []<left>
+  cnoremap { {}<left>
+endif
 
