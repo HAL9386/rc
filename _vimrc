@@ -32,6 +32,9 @@ set guifont=UbuntuMono_Nerd_Font_Mono::h12
 
 set rnu!
 
+set ignorecase
+set smartcase
+
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
