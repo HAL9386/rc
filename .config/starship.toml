@@ -89,11 +89,11 @@ $status\
 $os\
 $container\
 $shell\
-[╰─](fg:arrow)$character"""
+$character"""
 
 [character]
-success_symbol = "[󰍟](fg:arrow)"
-error_symbol = "[󰍟](fg:red)"
+success_symbol = "[╰─](fg:arrow)"
+error_symbol = "[╰─](fg:red)"
 
 [python]
 symbol = " "
